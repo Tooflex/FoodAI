@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		151F169C283BE9D4000BCC1F /* FoodAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F169B283BE9D4000BCC1F /* FoodAIApp.swift */; };
-		151F169E283BE9D4000BCC1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F169D283BE9D4000BCC1F /* ContentView.swift */; };
 		151F16A0283BE9D8000BCC1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151F169F283BE9D8000BCC1F /* Assets.xcassets */; };
 		151F16A3283BE9D8000BCC1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151F16A2283BE9D8000BCC1F /* Preview Assets.xcassets */; };
 		151F16A5283BE9D8000BCC1F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16A4283BE9D8000BCC1F /* Persistence.swift */; };
@@ -16,6 +15,16 @@
 		151F16B2283BE9D8000BCC1F /* FoodAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16B1283BE9D8000BCC1F /* FoodAITests.swift */; };
 		151F16BC283BE9D8000BCC1F /* FoodAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16BB283BE9D8000BCC1F /* FoodAIUITests.swift */; };
 		151F16BE283BE9D8000BCC1F /* FoodAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16BD283BE9D8000BCC1F /* FoodAIUITestsLaunchTests.swift */; };
+		151F16CB283BFA05000BCC1F /* FoodClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 151F16CA283BFA05000BCC1F /* FoodClassifier.mlmodel */; };
+		151F16D6283C2A8B000BCC1F /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16D3283C2A8B000BCC1F /* CameraError.swift */; };
+		151F16D7283C2A8B000BCC1F /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16D4283C2A8B000BCC1F /* FrameManager.swift */; };
+		151F16D8283C2A8B000BCC1F /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16D5283C2A8B000BCC1F /* CameraManager.swift */; };
+		151F16DB283C2A98000BCC1F /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16DA283C2A98000BCC1F /* CGImageExtension.swift */; };
+		151F16DE283C2AAD000BCC1F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16DD283C2AAD000BCC1F /* ContentViewModel.swift */; };
+		151F16E5283C2B36000BCC1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16E0283C2B35000BCC1F /* ContentView.swift */; };
+		151F16E6283C2B36000BCC1F /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16E1283C2B35000BCC1F /* ErrorView.swift */; };
+		151F16E7283C2B36000BCC1F /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16E2283C2B36000BCC1F /* FrameView.swift */; };
+		151F16E9283C2B36000BCC1F /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16E4283C2B36000BCC1F /* ToggleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +47,6 @@
 /* Begin PBXFileReference section */
 		151F1698283BE9D4000BCC1F /* FoodAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151F169B283BE9D4000BCC1F /* FoodAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAIApp.swift; sourceTree = "<group>"; };
-		151F169D283BE9D4000BCC1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		151F169F283BE9D8000BCC1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		151F16A2283BE9D8000BCC1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		151F16A4283BE9D8000BCC1F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +56,16 @@
 		151F16B7283BE9D8000BCC1F /* FoodAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		151F16BB283BE9D8000BCC1F /* FoodAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAIUITests.swift; sourceTree = "<group>"; };
 		151F16BD283BE9D8000BCC1F /* FoodAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		151F16CA283BFA05000BCC1F /* FoodClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FoodClassifier.mlmodel; sourceTree = "<group>"; };
+		151F16D3283C2A8B000BCC1F /* CameraError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		151F16D4283C2A8B000BCC1F /* FrameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
+		151F16D5283C2A8B000BCC1F /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		151F16DA283C2A98000BCC1F /* CGImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
+		151F16DD283C2AAD000BCC1F /* ContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		151F16E0283C2B35000BCC1F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		151F16E1283C2B35000BCC1F /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		151F16E2283C2B36000BCC1F /* FrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		151F16E4283C2B36000BCC1F /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +116,15 @@
 		151F169A283BE9D4000BCC1F /* FoodAI */ = {
 			isa = PBXGroup;
 			children = (
+				151F16D2283C2A8B000BCC1F /* Camera */,
+				151F16D9283C2A98000BCC1F /* Extensions */,
+				151F16DF283C2AC4000BCC1F /* Views */,
+				151F16DC283C2AAD000BCC1F /* ViewModels */,
 				151F169B283BE9D4000BCC1F /* FoodAIApp.swift */,
-				151F169D283BE9D4000BCC1F /* ContentView.swift */,
 				151F169F283BE9D8000BCC1F /* Assets.xcassets */,
 				151F16A4283BE9D8000BCC1F /* Persistence.swift */,
 				151F16A6283BE9D8000BCC1F /* FoodAI.xcdatamodeld */,
+				151F16CA283BFA05000BCC1F /* FoodClassifier.mlmodel */,
 				151F16A1283BE9D8000BCC1F /* Preview Content */,
 			);
 			path = FoodAI;
@@ -133,6 +155,43 @@
 			path = FoodAIUITests;
 			sourceTree = "<group>";
 		};
+		151F16D2283C2A8B000BCC1F /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				151F16D3283C2A8B000BCC1F /* CameraError.swift */,
+				151F16D4283C2A8B000BCC1F /* FrameManager.swift */,
+				151F16D5283C2A8B000BCC1F /* CameraManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		151F16D9283C2A98000BCC1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				151F16DA283C2A98000BCC1F /* CGImageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		151F16DC283C2AAD000BCC1F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				151F16DD283C2AAD000BCC1F /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		151F16DF283C2AC4000BCC1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				151F16E0283C2B35000BCC1F /* ContentView.swift */,
+				151F16E1283C2B35000BCC1F /* ErrorView.swift */,
+				151F16E2283C2B36000BCC1F /* FrameView.swift */,
+				151F16E4283C2B36000BCC1F /* ToggleButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +202,7 @@
 				151F1694283BE9D4000BCC1F /* Sources */,
 				151F1695283BE9D4000BCC1F /* Frameworks */,
 				151F1696283BE9D4000BCC1F /* Resources */,
+				151F16EA283C4581000BCC1F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -258,15 +318,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		151F16EA283C4581000BCC1F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n\tswiftlint\nelse\n\techo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\t\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		151F1694283BE9D4000BCC1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				151F16E7283C2B36000BCC1F /* FrameView.swift in Sources */,
+				151F16DE283C2AAD000BCC1F /* ContentViewModel.swift in Sources */,
+				151F16E5283C2B36000BCC1F /* ContentView.swift in Sources */,
+				151F16CB283BFA05000BCC1F /* FoodClassifier.mlmodel in Sources */,
 				151F16A5283BE9D8000BCC1F /* Persistence.swift in Sources */,
+				151F16D7283C2A8B000BCC1F /* FrameManager.swift in Sources */,
+				151F16D6283C2A8B000BCC1F /* CameraError.swift in Sources */,
+				151F16DB283C2A98000BCC1F /* CGImageExtension.swift in Sources */,
+				151F16E6283C2B36000BCC1F /* ErrorView.swift in Sources */,
+				151F16E9283C2B36000BCC1F /* ToggleButton.swift in Sources */,
 				151F16A8283BE9D8000BCC1F /* FoodAI.xcdatamodeld in Sources */,
-				151F169E283BE9D4000BCC1F /* ContentView.swift in Sources */,
 				151F169C283BE9D4000BCC1F /* FoodAIApp.swift in Sources */,
+				151F16D8283C2A8B000BCC1F /* CameraManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +517,7 @@
 				DEVELOPMENT_TEAM = 6NTQ2Y43QX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take a picture of your food";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +547,7 @@
 				DEVELOPMENT_TEAM = 6NTQ2Y43QX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take a picture of your food";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

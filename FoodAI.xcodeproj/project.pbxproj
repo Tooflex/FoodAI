@@ -97,6 +97,7 @@
 		151F168F283BE9D4000BCC1F = {
 			isa = PBXGroup;
 			children = (
+				15E3CF55283CB268003233D9 /* README.md */,
 				151F169A283BE9D4000BCC1F /* FoodAI */,
 				151F16B0283BE9D8000BCC1F /* FoodAITests */,
 				151F16BA283BE9D8000BCC1F /* FoodAIUITests */,
@@ -127,7 +128,6 @@
 				151F16A6283BE9D8000BCC1F /* FoodAI.xcdatamodeld */,
 				151F16CA283BFA05000BCC1F /* FoodClassifier.mlmodel */,
 				151F16A1283BE9D8000BCC1F /* Preview Content */,
-				15E3CF55283CB268003233D9 /* README.md */,
 			);
 			path = FoodAI;
 			sourceTree = "<group>";

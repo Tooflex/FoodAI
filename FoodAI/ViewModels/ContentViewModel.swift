@@ -16,6 +16,7 @@ class ContentViewModel: ObservableObject {
 	@Published var error: Error?
 	@Published var frame: CGImage?
 	@Published var predictionResultString = ""
+	@Published var pieChartData: [PieChartData] = []
 
 	var publisher: AnyPublisher<Void, Never>! = nil
 
@@ -48,12 +49,11 @@ class ContentViewModel: ObservableObject {
 				}
 
 				let ciImage = CIImage(cgImage: image)
-
 				return self?.context.createCGImage(ciImage, from: ciImage.extent)
 			}
 			.assign(to: &$frame)
 
-		publisher = Timer.publish(every: 0.5, on: RunLoop.main, in: .common).autoconnect().map {_ in
+		publisher = Timer.publish(every: 0.02, on: RunLoop.main, in: .common).autoconnect().map {_ in
 			if let frame = self.frame {
 				self.findFood(capturedImage: frame)
 			}

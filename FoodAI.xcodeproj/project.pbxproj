@@ -25,6 +25,9 @@
 		151F16E6283C2B36000BCC1F /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16E1283C2B35000BCC1F /* ErrorView.swift */; };
 		151F16E7283C2B36000BCC1F /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16E2283C2B36000BCC1F /* FrameView.swift */; };
 		151F16E9283C2B36000BCC1F /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F16E4283C2B36000BCC1F /* ToggleButton.swift */; };
+		15E3CF59283CFB99003233D9 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E3CF58283CFB99003233D9 /* PieChartView.swift */; };
+		15E3CF5B283CFBCC003233D9 /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E3CF5A283CFBCC003233D9 /* PieSliceView.swift */; };
+		15E3CF5E283D0607003233D9 /* ChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E3CF5D283D0607003233D9 /* ChartItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		151F16E2283C2B36000BCC1F /* FrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 		151F16E4283C2B36000BCC1F /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		15E3CF55283CB268003233D9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		15E3CF58283CFB99003233D9 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		15E3CF5A283CFBCC003233D9 /* PieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceView.swift; sourceTree = "<group>"; };
+		15E3CF5D283D0607003233D9 /* ChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 			children = (
 				151F16D2283C2A8B000BCC1F /* Camera */,
 				151F16D9283C2A98000BCC1F /* Extensions */,
+				15E3CF5C283D05D6003233D9 /* Model */,
 				151F16DF283C2AC4000BCC1F /* Views */,
 				151F16DC283C2AAD000BCC1F /* ViewModels */,
 				151F169B283BE9D4000BCC1F /* FoodAIApp.swift */,
@@ -186,12 +193,38 @@
 		151F16DF283C2AC4000BCC1F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				151F16E0283C2B35000BCC1F /* ContentView.swift */,
+				15E3CF57283CFB6D003233D9 /* Charts */,
+				15E3CF56283CFB3E003233D9 /* Screens */,
 				151F16E1283C2B35000BCC1F /* ErrorView.swift */,
 				151F16E2283C2B36000BCC1F /* FrameView.swift */,
 				151F16E4283C2B36000BCC1F /* ToggleButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		15E3CF56283CFB3E003233D9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				151F16E0283C2B35000BCC1F /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		15E3CF57283CFB6D003233D9 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				15E3CF58283CFB99003233D9 /* PieChartView.swift */,
+				15E3CF5A283CFBCC003233D9 /* PieSliceView.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		15E3CF5C283D05D6003233D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15E3CF5D283D0607003233D9 /* ChartItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,15 +378,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15E3CF59283CFB99003233D9 /* PieChartView.swift in Sources */,
 				151F16E7283C2B36000BCC1F /* FrameView.swift in Sources */,
 				151F16DE283C2AAD000BCC1F /* ContentViewModel.swift in Sources */,
 				151F16E5283C2B36000BCC1F /* ContentView.swift in Sources */,
 				151F16CB283BFA05000BCC1F /* FoodClassifier.mlmodel in Sources */,
+				15E3CF5B283CFBCC003233D9 /* PieSliceView.swift in Sources */,
 				151F16A5283BE9D8000BCC1F /* Persistence.swift in Sources */,
 				151F16D7283C2A8B000BCC1F /* FrameManager.swift in Sources */,
 				151F16D6283C2A8B000BCC1F /* CameraError.swift in Sources */,
 				151F16DB283C2A98000BCC1F /* CGImageExtension.swift in Sources */,
 				151F16E6283C2B36000BCC1F /* ErrorView.swift in Sources */,
+				15E3CF5E283D0607003233D9 /* ChartItem.swift in Sources */,
 				151F16E9283C2B36000BCC1F /* ToggleButton.swift in Sources */,
 				151F16A8283BE9D8000BCC1F /* FoodAI.xcdatamodeld in Sources */,
 				151F169C283BE9D4000BCC1F /* FoodAIApp.swift in Sources */,

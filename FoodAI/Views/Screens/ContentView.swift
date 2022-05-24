@@ -44,9 +44,18 @@ struct ContentView: View {
 
 			ErrorView(error: model.error)
 
-			Text(model.predictionResultString)
-				.onReceive(model.publisher) {
+			VStack {
+				Text(model.predictionResultString)
+					.foregroundColor(.white)
+					.onReceive(model.publisher) {
+					}
+				Spacer()
+				if model.pieChartData.count != 0 {
+					PieChartView(pieChartData: model.pieChartData,
+								 formatter: {value in String(format: "%.2f kcal", value)})
+					.padding()
 				}
+			}
 		}
 	}
 }

@@ -13,7 +13,7 @@ class FrameManager: NSObject, ObservableObject {
   @Published var current: CVPixelBuffer?
 
   let videoOutputQueue = DispatchQueue(
-    label: "com.raywenderlich.VideoOutputQ",
+    label: "com.tooflexdev.VideoOutputQ",
     qos: .userInitiated,
     attributes: [],
     autoreleaseFrequency: .workItem)

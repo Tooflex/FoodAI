@@ -66,6 +66,7 @@
 		151F16E1283C2B35000BCC1F /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		151F16E2283C2B36000BCC1F /* FrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 		151F16E4283C2B36000BCC1F /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		15E3CF55283CB268003233D9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +127,7 @@
 				151F16A6283BE9D8000BCC1F /* FoodAI.xcdatamodeld */,
 				151F16CA283BFA05000BCC1F /* FoodClassifier.mlmodel */,
 				151F16A1283BE9D8000BCC1F /* Preview Content */,
+				15E3CF55283CB268003233D9 /* README.md */,
 			);
 			path = FoodAI;
 			sourceTree = "<group>";

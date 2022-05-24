@@ -21,7 +21,7 @@ class CameraManager: ObservableObject {
 
   let session = AVCaptureSession()
 
-  private let sessionQueue = DispatchQueue(label: "com.tooflexdev.FoodAISession")
+  private let sessionQueue = DispatchQueue(label: "com.tooflexdev.FoodAISessionQ")
   private let videoOutput = AVCaptureVideoDataOutput()
   private var status = Status.unconfigured
 
@@ -74,7 +74,7 @@ class CameraManager: ObservableObject {
     let device = AVCaptureDevice.default(
       .builtInWideAngleCamera,
       for: .video,
-      position: .back)
+	  position: .back)
     guard let camera = device else {
       set(error: .cameraUnavailable)
       status = .failed
@@ -103,7 +103,7 @@ class CameraManager: ObservableObject {
         [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
 
       let videoConnection = videoOutput.connection(with: .video)
-      videoConnection?.videoOrientation = .portrait
+		videoConnection?.videoOrientation = .portrait
     } else {
       set(error: .cannotAddOutput)
       status = .failed
